@@ -21,3 +21,4 @@ leftJoin(books,authors, (books)-> books.bookId, (authors)-> authors.bookId) map 
 // })
 
 /*payload.store.books map ((item, index) -> if(authors.bookId[index]==item.bookId)item ++ authors[index] distinctBy($) else "")*/
+/*payload.store.books map ((item, index) -> if(x.bookId[index]==item.bookId)item ++ x[index] distinctBy ((value, key) -> value) else "")*/
